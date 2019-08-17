@@ -39,7 +39,7 @@
 
 0. Create your tables using SQL
 
- - Check out [This file](sql/initialize.sql) or [This file](https://github.com/AustinCodingAcademy/311_wk3_day2_advanced_select/blob/master/initialize.sql) for syntax.
+    - Check out [This file](sql/initialize.sql) or [This file](https://github.com/AustinCodingAcademy/311_wk3_day2_advanced_select/blob/master/initialize.sql) for syntax.
 
 1. Open MySQL Workbench - admin DB which is connected to GCP
 
