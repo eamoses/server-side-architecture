@@ -99,7 +99,7 @@ CREATE TABLE comments (
 
 1. Add a `.gititnore` and add `node_modules` to it. Add and commit this file.
 
-2. Make sure to add the following dependencies: `npm install express body-parser` and `npm install --g nodemon`
+2. Make sure to add the following dependencies: `npm install --save express body-parser` and `npm install -g --save nodemon` and add `"start": "nodemon ./index.js"` to your `package.json`
 
 3. Add an `index.js` file and include generally the following:
 
