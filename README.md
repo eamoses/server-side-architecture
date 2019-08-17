@@ -106,7 +106,7 @@ CREATE TABLE comments (
 ```javascript
 const express = require('express')
 const app = express()
-const products = require('./routers/users')
+const users = require('./routers/users')
 const port = process.env.PORT || 4001
 const bodyParser = require('body-parser')
 
