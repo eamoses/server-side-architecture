@@ -1,5 +1,7 @@
 # Server Side Architecture
 
+**NOTE: This tutorial assumes you already have a GCP instance with mysql started and connected with MySQLWorkbench**
+
 ## Application Idea
 
 - My app will have Users
@@ -140,7 +142,7 @@ module.exports = router
 
 [It should look something like this](https://github.com/eamoses/311/blob/master/311_wk2_day2_express-continued/controllers/comments.js)
 
-6. Create a `mysql` folder and [make the contents look like this](https://github.com/eamoses/311/tree/master/311_wk5_both_api_hackathon/mysql)
+6. Create a `mysql` folder and [make the contents look like this](https://github.com/eamoses/311/tree/master/311_wk5_both_api_hackathon/mysql) and do `npm install --save mysql`
 
     - This is where we enter our unique SQL db info. In order to hide our passwords, do the following:
 
@@ -149,6 +151,8 @@ module.exports = router
     2. Create a `config.js` file at the root level of your app and add `const password = "whatever your password is"; module.exports = password;`
 
     3. In your `mysql/connection.js` file add `const password = require('../config')` at the top. Use your `password` variable in the password connection portion of your `pool`
+    
+    4. Open Postman and start CRUD'n your app!
 
 **Don't forget to place your ER Diagram as an image into an `images` folder on the root level of your project repo**
 
