@@ -152,7 +152,9 @@ module.exports = router
 
     3. In your `mysql/connection.js` file add `const password = require('../config')` at the top. Use your `password` variable in the password connection portion of your `pool`
     
-    4. Open Postman and start CRUD'n your app!
+    4. Change your `controllers/whatever.js` file to look more [like this file](https://github.com/eamoses/311/blob/master/311_wk5_both_api_hackathon/controllers/employees.js)
+    
+    5. Open Postman and start CRUD'n your app!
 
 **Don't forget to place your ER Diagram as an image into an `images` folder on the root level of your project repo**
 
