@@ -149,4 +149,6 @@ module.exports = router
 
     3. In your `mysql/connection.js` file add `const password = require('../config')` at the top. Use your `password` variable in the password connection portion of your `pool`
 
+**Don't forget to place your ER Diagram as an image into an `images` folder on the root level of your project repo**
+
 TA DA! You have created a diagram, a schema from scratch, and connected it with a Nodejs Express server!
