@@ -125,22 +125,36 @@ app.listen(port, () =>
 Your first table's javascript file should look something like this:
 
 ```javascript
-const express = require('express')
-const router = express.Router()
-const UsersController = require('../controllers/users')
+const express = require('express');
+const router = express.Router();
+const usersController = require('../controllers/users');
 
-router.get('/users', UsersController.list)
-router.get('/users/:id', UsersController.show)
-router.post('/users', UsersController.create)
-router.put('/users/:id', UsersController.update)
-router.delete('/users/:id', UsersController.remove)
+router.get('/', usersController.getUsers)
 
-module.exports = router
+module.exports = router;
 ```
 
 5. Create a `controllers` folder and name the javascript file within it the same as the previous javascript file. Mine was users.
 
-[It should look something like this](https://github.com/eamoses/311/blob/master/311_wk2_day2_express-continued/controllers/comments.js)
+```javascript
+const mysql = require('mysql')
+const pool = require('../mysql/connection')
+const { handleSQLError } = require('../mysql/error')
+
+// Select all fields from the users table.
+// limit the results to 50.
+// Use res.json to return the results to the user.
+const getUsers = (req, res) => {
+    pool.query("SELECT * FROM users", (err, rows) => {
+      if (err) return handleSQLError(res, err)
+      return res.json(rows);
+    })
+}
+
+module.exports = {
+    getUsers
+}
+```
 
 6. Create a `mysql` folder and [make the contents look like this](https://github.com/eamoses/311/tree/master/311_wk5_both_api_hackathon/mysql) and do `npm install --save mysql`
 
