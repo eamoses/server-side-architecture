@@ -33,6 +33,8 @@
 
 ![ERD](images/erd.png)
 
+**Be sure to save an image of your diagram to put in your project repository later**
+
 ## Create MySQL Tables
 
 0. Create your tables using SQL
