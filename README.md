@@ -27,6 +27,8 @@
 
 ## Tables
 
+- This is a solid site to find examples of tables: https://sample-videos.com/download-sample-sql.php
+
 1.  Users
 
 2. Posts
